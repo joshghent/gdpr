@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        'Fideloper\Proxy\TrustedProxyServiceProvider',
 
         /*
          * Application Service Providers...
