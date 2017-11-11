@@ -1,5 +1,15 @@
 <?php
 
+// If on Heroku the database connection for redis will be provided as a URL
+// This parses the URL into the different sections
+if (getenv('REDIS_URL')) {
+    $url = parse_url(getenv('REDIS_URL'));
+
+    putenv('REDIS_HOST='.$url['host']);
+    putenv('REDIS_PORT='.$url['port']);
+    putenv('REDIS_PASSWORD='.$url['pass']);
+}
+
 return [
 
     /*
