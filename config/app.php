@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         'Fideloper\Proxy\TrustedProxyServiceProvider',
+        Rollbar\Laravel\RollbarServiceProvider::class,
 
         /*
          * Application Service Providers...
